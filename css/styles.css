@@ -1,15 +1,23 @@
 :root {
   /* Font*/
-  --primary-font: Roboto;
-  --secondary-font Raleway, sans-serif;
+  --primary-font: Roboto, sans-serif;
+  --secondary-font: Raleway, sans-serif;
 
   /* Colors*/
   --body-grey-cl: #434455 ;
   --body-white-bg: #FFFFFF ;
   --link-grey-cl: #2e2f42 ;
   --text-grey-cl: #434455;
+  --hover-focus-cl: #404BBF;
+  --logo-cian-cl: #4D5AE5;
 }
 
+    /* Others*/
+ *,
+ *::before,
+ *::after {
+  box-sizing: border-box;
+ }
 /**
   |============================
   | Common styles
@@ -17,7 +25,7 @@
 */
 
 body {
-  font-family: var(--primary-font), sans-serif;
+  font-family: var(--primary-font);
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -31,15 +39,17 @@ a {
     text-decoration: none;
     color: currentColor;
 }
-
 button {
   font-family: inherit;
   cursor: pointer;
 }
-
 address {
   font-style: normal;
 }
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
 
 /* Base styles*/
 
@@ -53,8 +63,10 @@ address {
 .link {
   color:var(--link-grey-cl);
   text-decoration: none;
-
+  margin: 0;
+  padding: 0;
 }
+
 /**
   |============================
   | Header styles
@@ -67,30 +79,29 @@ address {
 }
 
 .header-logo {
-  font-family:"Raleway", sans-serif;
+  font-family: var(--secondary-font);
   font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #4D5AE5; 
+  color: var(--logo-cian-cl); 
 }
 
 .header-studio {
-  font-family: "Raleway", sans-serif;
-  color: #2E2F42;
+  font-family: var(--secondary-font);
+  color: var(--link-grey-cl);
 }
 
 .header-list {}
 
 .header-item {}
 
-.header-link:hover {
-  color: #404BBF;
-}
+.header-link:hover,
 .header-link:focus {
-  color: #404BBF;
+  color: var(--hover-focus-cl);
 }
+
 
 .header-link {
   font-weight: 500;
@@ -108,14 +119,14 @@ address {
 
 .header-contact-link:hover,
 .header-contact-link:focus {
-  color: #404BBF;
+  color: var(--hover-focus-cl);
 }
 
 .header-contact-link {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #434455;
+  color: var(--body-grey-cl);
 }
 
 /**
@@ -139,7 +150,7 @@ address {
 
 .hero-btn:hover,
 .hero-btn:focus {
-  background-color:#404BBF;
+  background-color: var(--hover-focus-cl);
 }
 
 .hero-btn {
@@ -256,7 +267,7 @@ address {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #4D5AE5;
+  color: var(--logo-cian-cl);
 }
 
 .footer-studio {
