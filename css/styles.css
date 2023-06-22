@@ -1,0 +1,325 @@
+:root {
+  /* Font*/
+  --primary-font: Roboto;
+  --secondary-font Raleway, sans-serif;
+
+  /* Colors*/
+  --body-grey-cl: #434455 ;
+  --body-white-bg: #FFFFFF ;
+  --link-grey-cl: #2e2f42 ;
+  --text-grey-cl: #434455;
+}
+
+/**
+  |============================
+  | Common styles
+  |============================
+*/
+
+body {
+  font-family: var(--primary-font), sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: --body-grey-cl;
+  background: var(--body-white-bg)
+    }
+
+/* Reset*/
+a {
+    text-decoration: none;
+    color: currentColor;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Base styles*/
+
+.section {
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  color:var(--link-grey-cl);
+  text-decoration: none;
+
+}
+/**
+  |============================
+  | Header styles
+  |============================
+*/ 
+.header {
+}
+
+.header-nav {
+}
+
+.header-logo {
+  font-family:"Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #4D5AE5; 
+}
+
+.header-studio {
+  font-family: "Raleway", sans-serif;
+  color: #2E2F42;
+}
+
+.header-list {}
+
+.header-item {}
+
+.header-link:hover {
+  color: #404BBF;
+}
+.header-link:focus {
+  color: #404BBF;
+}
+
+.header-link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.header-address {
+
+}
+.header-contact-list {
+
+}
+
+.header-contact-link:hover,
+.header-contact-link:focus {
+  color: #404BBF;
+}
+
+.header-contact-link {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+
+/**
+  |============================
+  | Hero styles
+  |============================
+*/
+
+.hero {
+  background: #2E2F42;
+}
+
+.hero-title {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color:#404BBF;
+}
+
+.hero-btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  background-color: #4D5AE5;
+  color: #FFFFFF;
+  
+}
+
+/**
+  |============================
+  | Feature styles
+  |============================
+*/
+.feature {}
+
+.feature-title {}
+
+.feature-list {}
+
+.feature-item {}
+
+.feature-subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2E2F42;
+}
+
+.feature-text {
+  color: var(--text-grey-cl);
+}
+
+/**
+  |============================
+  | Services styles
+  |============================
+*/
+.services {}
+
+.services-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #2E2F42;
+}
+
+.services-list {}
+
+.services-item {}
+
+.services-img {}
+
+
+
+/**
+  |============================
+  | Team styles
+  |============================
+*/
+
+.team {
+    background: #F4F4FD;
+}
+
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #2E2F42;
+}
+
+.team-list {}
+
+.team-item {}
+
+.team-subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2E2F42;
+}
+
+.team-text {
+  color:var(--text-grey-cl);
+}
+
+.team-img {}
+
+/**
+  |============================
+  | Footer styles
+  |============================
+*/
+.footer {
+    background: #2E2F42;
+}
+
+.footer-logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #4D5AE5;
+}
+
+.footer-studio {
+  font-family: "Raleway", sans-serif;
+  color: #F4F4FD;
+}
+
+.footer-text {
+  font-family: var(--primary-font);
+  color: #F4F4FD;
+}
+
+/**
+  |============================
+  | Portfolio styles
+  |============================
+*/
+
+/**
+  |============================
+  | Filter btn
+  |============================
+*/
+.filter-title {
+
+}
+.filter-list {
+
+}
+
+.filter-item {
+  
+}
+
+.filter-btn-all {
+  font-weight: 500;
+  color: #FFFFFF;
+  background: #404BBF;
+}
+
+.filter-btn {
+  font-weight: 500;
+  color: #4D5AE5;
+  background: #F4F4FD;
+}
+
+/**
+  |============================
+  | Filter items
+  |============================
+*/
+.list-block {}
+
+.item-site {}
+
+.filter-link {}
+
+.filter-img {}
+
+.filter-subtitle {
+  color: var(--body-grey-cl)
+}
+
+.filter-text {
+  color: var(--text-grey-cl);
+}
