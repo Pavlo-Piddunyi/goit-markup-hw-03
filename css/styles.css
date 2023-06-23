@@ -54,17 +54,27 @@ h1, h2, h3, h4, h5, h6, p {
 /* Base styles*/
 
 .section {
+  padding-top: 60px;
+  padding-bottom: 50px;
 }
+
+.container {
+  width: 1158px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+ }
 
 .list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .link {
   color:var(--link-grey-cl);
   text-decoration: none;
-  margin: 0;
-  padding: 0;
 }
 
 /**
@@ -73,6 +83,8 @@ h1, h2, h3, h4, h5, h6, p {
   |============================
 */ 
 .header {
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .header-nav {
@@ -137,6 +149,8 @@ h1, h2, h3, h4, h5, h6, p {
 
 .hero {
   background: #2E2F42;
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 
 .hero-title {
@@ -168,7 +182,9 @@ h1, h2, h3, h4, h5, h6, p {
   | Feature styles
   |============================
 */
-.feature {}
+.feature {
+  padding-top: 120px;
+}
 
 .feature-title {}
 
@@ -220,7 +236,8 @@ h1, h2, h3, h4, h5, h6, p {
 */
 
 .team {
-    background: #F4F4FD;
+  padding-bottom: 120px;
+  background: #F4F4FD;
 }
 
 .team-title {
@@ -257,6 +274,8 @@ h1, h2, h3, h4, h5, h6, p {
   |============================
 */
 .footer {
+  padding-top: 100px;
+  padding-bottom: 100px;
     background: #2E2F42;
 }
 
