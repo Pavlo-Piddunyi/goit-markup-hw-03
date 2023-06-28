@@ -4,20 +4,26 @@
   --secondary-font: Raleway, sans-serif;
 
   /* Colors*/
-  --body-grey-cl: #434455 ;
-  --body-white-bg: #FFFFFF ;
-  --link-grey-cl: #2e2f42 ;
+  --body-grey-cl: #434455;
+  --body-white-bg: #FFFFFF;
+  --link-grey-cl: #2e2f42;
   --text-grey-cl: #434455;
   --hover-focus-cl: #404BBF;
   --logo-cian-cl: #4D5AE5;
 }
 
-    /* Others*/
- *,
- *::before,
- *::after {
+/* Gap*/
+--items: 3;
+--indent: 24px;
+
+
+/* Others*/
+*,
+*::before,
+*::after {
   box-sizing: border-box;
- }
+}
+
 /**
   |============================
   | Common styles
@@ -32,22 +38,35 @@ body {
   letter-spacing: 0.02em;
   color: --body-grey-cl;
   background: var(--body-white-bg)
-    }
+}
 
 /* Reset*/
 a {
-    text-decoration: none;
-    color: currentColor;
+  text-decoration: none;
+  color: currentColor;
 }
+
 button {
   font-family: inherit;
   cursor: pointer;
 }
+
 address {
   font-style: normal;
 }
-h1, h2, h3, h4, h5, h6, p {
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   margin: 0;
+}
+
+img {
+  display: block;
 }
 
 
@@ -64,7 +83,7 @@ h1, h2, h3, h4, h5, h6, p {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
- }
+}
 
 .list {
   list-style: none;
@@ -73,21 +92,38 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .link {
-  color:var(--link-grey-cl);
+  color: var(--link-grey-cl);
   text-decoration: none;
 }
 
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--items);
+}
+calc((100% - 2*var(--indent)) / var);
+.card-set-item {
+  flex-basis: calc((100% - var(--indent * var(--items)-1 )) / var(--items));
+}
 /**
   |============================
   | Header styles
   |============================
-*/ 
+*/
 .header {
   padding-top: 24px;
   padding-bottom: 24px;
 }
 
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .header-nav {
+  display: flex;
+  align-items: center;
 }
 
 .header-logo {
@@ -97,7 +133,8 @@ h1, h2, h3, h4, h5, h6, p {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--logo-cian-cl); 
+  color: var(--logo-cian-cl);
+  margin-right: 76px;
 }
 
 .header-studio {
@@ -105,7 +142,11 @@ h1, h2, h3, h4, h5, h6, p {
   color: var(--link-grey-cl);
 }
 
-.header-list {}
+.header-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
 
 .header-item {}
 
@@ -122,11 +163,12 @@ h1, h2, h3, h4, h5, h6, p {
   letter-spacing: 0.02em;
 }
 
-.header-address {
+.header-address {}
 
-}
 .header-contact-list {
-
+  display: flex;
+  align-items: center;
+  gap: 40px;
 }
 
 .header-contact-link:hover,
@@ -151,7 +193,7 @@ h1, h2, h3, h4, h5, h6, p {
   background: #2E2F42;
   padding-top: 188px;
   padding-bottom: 188px;
-}
+  }
 
 .hero-title {
   font-weight: 700;
@@ -160,6 +202,10 @@ h1, h2, h3, h4, h5, h6, p {
   text-align: center;
   letter-spacing: 0.02em;
   color: #FFFFFF;
+  display: flex;
+  width: 496px;
+  margin-left: 310px;
+  justify-content: center;
 }
 
 .hero-btn:hover,
@@ -174,7 +220,7 @@ h1, h2, h3, h4, h5, h6, p {
   letter-spacing: 0.04em;
   background-color: #4D5AE5;
   color: #FFFFFF;
-  
+
 }
 
 /**
@@ -186,11 +232,18 @@ h1, h2, h3, h4, h5, h6, p {
   padding-top: 120px;
 }
 
-.feature-title {}
+.feature-title {
+  display: none;
+}
 
-.feature-list {}
+.feature-list {
+  display: flex;
+  justify-content: space-between;
+}
 
-.feature-item {}
+.feature-item {
+  width: 264px;
+}
 
 .feature-subtitle {
   font-weight: 500;
@@ -198,6 +251,7 @@ h1, h2, h3, h4, h5, h6, p {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2E2F42;
+  margin-bottom: 8px;
 }
 
 .feature-text {
@@ -263,7 +317,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .team-text {
-  color:var(--text-grey-cl);
+  color: var(--text-grey-cl);
 }
 
 .team-img {}
@@ -276,7 +330,7 @@ h1, h2, h3, h4, h5, h6, p {
 .footer {
   padding-top: 100px;
   padding-bottom: 100px;
-    background: #2E2F42;
+  background: #2E2F42;
 }
 
 .footer-logo {
@@ -310,16 +364,14 @@ h1, h2, h3, h4, h5, h6, p {
   | Filter btn
   |============================
 */
-.filter-title {
+.filter-title {}
 
-}
 .filter-list {
-
-}
-
-.filter-item {
+  display: flex;
   
 }
+
+.filter-item {}
 
 .filter-btn-all {
   font-weight: 500;
@@ -338,9 +390,16 @@ h1, h2, h3, h4, h5, h6, p {
   | Filter items
   |============================
 */
-.list-block {}
+.list-block {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px 24px;
 
-.item-site {}
+}
+
+.item-site {
+  width: calc((100% - 2 * 48px) / 3);
+}
 
 .filter-link {}
 
