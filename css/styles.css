@@ -120,9 +120,7 @@ img {
   |============================
 */
 .header {
-  padding-top: 24px;
   padding-right: 15px;
-  padding-bottom: 24px;
   padding-left: 15px;
   border-bottom: 1px solid #e7e9fc;
 }
