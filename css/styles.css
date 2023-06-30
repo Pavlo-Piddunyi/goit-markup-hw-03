@@ -388,24 +388,40 @@ padding-bottom: 120px;
   | Filter btn
   |============================
 */
+
+.filter {
+  padding-top: 96px;
+}
 .filter-title {
 
 }
 .filter-list {
   display: flex;
+  justify-content: center;
+  gap: 0 24px;
+  padding-bottom: 72px;
   }
 .filter-item {
 
 }
-.filter-btn-all {
-  font-weight: 500;
-  color: #FFFFFF;
-  background: #404BBF;
+
+.filter-btn:hover,
+.filter-btn:focus {
+  color: var(--body-white-bg);
+  background-color: var(--hover-focus-cl);
+  border-radius: 4px;
 }
+  
 .filter-btn {
   font-weight: 500;
   color: #4D5AE5;
   background: #F4F4FD;
+  padding: 12px 24px;
+  border: 0;
+  display: block;
+  margin: 0 auto;
+  
+  
 }
 
 /**
@@ -418,8 +434,7 @@ padding-bottom: 120px;
   align-items: center;
   flex-wrap: wrap;
   gap: 48px 24px;
-
-}
+  }
 .item-site {
   width: calc((100% - 2 * 24px) / 3);
 }
@@ -428,10 +443,12 @@ padding-bottom: 120px;
 
 }
 .filter-img {
-
+  margin-bottom: 32px;
 }
 .card-conrent {
-  padding: 32px 16px;
+  padding-right: 16px;
+  padding-bottom: 32px;
+  padding-left: 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
 
