@@ -105,6 +105,10 @@ img {
   color: var(--link-grey-cl);
   text-decoration: none;
 }
+.nav-link {
+  display: block;
+  padding: 24px 0;
+}
 .card-set {
   display: flex;
   flex-wrap: wrap;
@@ -120,12 +124,9 @@ img {
   |============================
 */
 .header {
-  padding-right: 15px;
-  padding-left: 15px;
   border-bottom: 1px solid #e7e9fc;
 }
 .header-container {
-  padding: 24px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
