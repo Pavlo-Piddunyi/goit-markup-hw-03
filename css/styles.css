@@ -105,10 +105,7 @@ img {
   color: var(--link-grey-cl);
   text-decoration: none;
 }
-.nav-link {
-  display: block;
-  padding: 24px 0;
-}
+
 .card-set {
   display: flex;
   flex-wrap: wrap;
@@ -124,6 +121,8 @@ img {
   |============================
 */
 .header {
+  padding-top: 24px;
+  padding-bottom: 24px;
   border-bottom: 1px solid #e7e9fc;
 }
 .header-container {
@@ -457,10 +456,13 @@ padding-bottom: 120px;
   border-top: none;
   }
 .filter-subtitle {
-  margin-bottom: 8px;
   color: var(--body-grey-cl);
-  
-}
+  }
+
 .filter-text {
   color: var(--text-grey-cl);
+}
+
+.subtitle {
+  margin-bottom: 8px;
 }
