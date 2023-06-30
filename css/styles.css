@@ -134,6 +134,8 @@ img {
   align-items: center;
 }
 .header-logo {
+  display: block;
+  padding: 24px 0;
   font-family: var(--secondary-font);
   font-weight: 800;
   font-size: 18px;
