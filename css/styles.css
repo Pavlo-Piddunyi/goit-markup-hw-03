@@ -82,8 +82,7 @@ img {
   width: 1158px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 0 15px;
 }
 .visually-hidden {
   position: absolute;
@@ -447,8 +446,7 @@ padding-bottom: 120px;
 
 }
 .filter-img {
-  
-}
+  }
 .card-content {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
@@ -456,7 +454,8 @@ padding-bottom: 120px;
 
 }
 .filter-subtitle {
-  color: var(--body-grey-cl)
+  color: var(--body-grey-cl);
+  margin-bottom: 8px;
 }
 .filter-text {
   color: var(--text-grey-cl);
